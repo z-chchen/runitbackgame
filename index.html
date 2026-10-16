@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Run It Back · Basketball Life Sim</title>
+<meta name="description" content="Run freshman year back and see how far hoops could've taken you. A high school basketball life sim: 42 weeks, 180 scenes, 16 games and a tryout list. Free in your browser." />
+<meta name="theme-color" content="#1f140c" />
+<link rel="canonical" href="https://runitbackgame.com/" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Run It Back" />
+<meta property="og:title" content="Run It Back · Basketball Life Sim" />
+<meta property="og:description" content="What if you could go back to freshman year and see how far basketball could have taken you?" />
+<meta property="og:url" content="https://runitbackgame.com/" />
+<meta property="og:image" content="https://runitbackgame.com/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://runitbackgame.com/og-image.jpg" />
+<link rel="preload" href="/fonts/anton.ttf" as="font" type="font/ttf" crossorigin />
+<link rel="stylesheet" href="/landing.css" />
+<script>
+  // Before anything draws: a Home Screen install opens straight into the game, and a checkout
+  // return addressed to the old root (/?preordered=, /?skipped=) goes on to the game.
+  (function () {
+    var q = location.search;
+    var standalone = (window.matchMedia && matchMedia("(display-mode: standalone)").matches) || navigator.standalone === true;
+    if (standalone || /[?&](preordered|skipped)=/.test(q)) location.replace("/play/" + q);
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Run It Back",
+  "url": "https://runitbackgame.com/",
+  "image": "https://runitbackgame.com/og-image.jpg",
+  "description": "A high school basketball life sim. Go back to freshman year and see how far basketball could have taken you.",
+  "genre": ["Sports", "Simulation", "Visual novel"],
+  "gamePlatform": "Web browser",
+  "playMode": "SinglePlayer",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/">Run It Back</a>
+    <nav>
+      <a class="link" href="#week">How it plays</a>
+      <a class="link" href="#people">Your people</a>
+      <a class="link" href="#episodes">Episodes</a>
+      <a class="link" href="#faq">FAQ</a>
+      <a class="btn small" href="/play/" data-cta>Play free</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" style="padding:0">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <p class="kicker">High school hoops life sim · Free in your browser</p>
+      <h1 class="display"><span class="slant">Run freshman year <em>back.</em></span></h1>
+      <p class="lede">See how far hoops could've taken you. You pick your height, your parents and your game. The year decides when your growth spurt hits, who's in the gym when you're cooking, and whether the work pays off.</p>
+      <div class="ctas">
+        <a class="btn" href="/play/" data-cta>Play freshman year free</a>
+        <a class="btn ghost" href="#week">How it plays</a>
+      </div>
+      <p class="fine">No download, no account. Your save stays in your browser.</p>
+    </div>
+    <div class="cover">
+      <div class="cover-inner">
+        <div class="cover-band"><b>Freshman</b><span>VOL. 1</span></div>
+        <img src="/img/splash.webp" width="900" height="1500" alt="The cast of Run It Back in the gym." fetchpriority="high" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="facts">
+  <ul>
+    <li><b>42</b><span>weeks, August to June</span></li>
+    <li><b>180</b><span>scenes</span></li>
+    <li><b>16</b><span>games, then the bracket</span></li>
+    <li><b>11</b><span>rival aces</span></li>
+  </ul>
+</div>
+
+<section id="hand">
+  <div class="wrap split">
+    <div>
+      <p class="kicker">Before day one</p>
+      <h2 class="display"><span class="slant">Build your <em>hooper.</em></span></h2>
+      <p class="lede">Put in your height and weight, real numbers or dream numbers, plus your mom's and dad's. Then pick your frame, your position and one of 15 play styles. The game shows what you bring and where the work starts.</p>
+      <p class="dim">"Your parents decide most of how tall you'll get. They don't decide when it shows up."</p>
+      <div class="two-lists">
+        <div class="panel">
+          <span class="tag">You choose</span>
+          <h3>What you do</h3>
+          <ul>
+            <li>How you spend your free time every week</li>
+            <li>What you say, and who you say it to</li>
+            <li>What you do when the game's on the line</li>
+            <li>When to grind and when to rest</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <span class="tag">The year decides</span>
+          <h3>What happens</h3>
+          <ul>
+            <li>When your growth spurt hits</li>
+            <li>Whether this week's work pays off</li>
+            <li>Who's watching when you go off</li>
+            <li>How other people take it</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="grid g2">
+      <div class="frame"><img src="/img/cast-player.webp" width="480" height="600" alt="Your player, in a navy jersey." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-you-free-throw.webp" width="1100" height="733" alt="You at the free throw line." loading="lazy" style="height:100%;object-fit:cover" /></div>
+    </div>
+  </div>
+</section>
+
+<section id="week" class="alt">
+  <div class="wrap">
+    <p class="kicker">How it plays</p>
+    <h2 class="display"><span class="slant">One week <em>at a time.</em></span></h2>
+    <p class="lede">Every week runs the same four steps.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="frame"><img src="/img/place-home.webp" alt="Home." loading="lazy" /></div>
+        <div class="num">1</div>
+        <h3>Plan</h3>
+        <p>Four blocks of free time after class, practice and games. Fill them with skill work, open gym, film, lifting, conditioning, study, family, friends, rest or free time. Stack too much hoops in one week and the third and fourth blocks count for less.</p>
+      </div>
+      <div class="step">
+        <div class="frame"><img src="/img/place-hallway.webp" alt="The school hallway." loading="lazy" /></div>
+        <div class="num">2</div>
+        <h3>Live it</h3>
+        <p>One or two scenes a week with your coach, your teammates, your friends and your family. You make the call, and people remember it.</p>
+      </div>
+      <div class="step">
+        <div class="frame"><img src="/img/place-gym.webp" alt="The gym." loading="lazy" /></div>
+        <div class="num">3</div>
+        <h3>Play</h3>
+        <p>Games go possession by possession for 32 minutes. Coach decides your minutes. When the game stops on you, it's your call.</p>
+      </div>
+      <div class="step">
+        <div class="frame"><img src="/img/place-stands.webp" alt="The stands." loading="lazy" /></div>
+        <div class="num">4</div>
+        <h3>See what changed</h3>
+        <p>The recap shows what got better and where it came from, how your body's holding up, where you stand with people, and what's coming next week.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="games">
+  <div class="wrap split flip">
+    <div>
+      <p class="kicker">Game night</p>
+      <h2 class="display"><span class="slant">The game stops <em>on you.</em></span></h2>
+      <p class="lede">Twice a game, three times in tournament and rival games, the clock freezes with the scoreboard up and it's on you. Make the sound play, gamble, stay out of it, or take over.</p>
+      <p>About once every two games you get a split-second play: a loose ball, a charge to take, a layup to stop, a box-out. Go physical and there's a small chance you get hurt.</p>
+      <p>After the buzzer you get the box score. Your minutes, buckets, boards and dimes go in a game log you keep all year.</p>
+    </div>
+    <div class="grid g2">
+      <div class="frame" style="grid-column:span 2"><img src="/img/scene-you-driving.webp" width="1100" height="733" alt="You driving to the basket past a defender." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-you-layup.webp" width="1100" height="733" alt="You finishing a layup." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-you-boxout-reyes.webp" width="1100" height="733" alt="You boxing out Micah Reyes for a rebound." loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+
+<section id="season" class="alt">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="kicker">The season</p>
+        <h2 class="display"><span class="slant">Make the list. <em>Then earn your minutes.</em></span></h2>
+        <p class="lede">Tryouts are in November. Fifty-one kids, thirty spots.</p>
+        <p>Make the freshman team and you're still fighting for minutes. Coach Nakamura reviews roles three times a season. Get cut and the year keeps going, and so does your shot at a spot. Ball out and you could get called up. JV is a long shot. Varsity is a really long shot.</p>
+        <p>Sixteen games: six non-league, then ten league games against five schools, twice each. Then all six league teams go into one bracket. Lose once and you're done.</p>
+      </div>
+      <div class="frame"><img src="/img/arena-home.webp" width="1280" height="720" alt="A packed home gym during a game." loading="lazy" /></div>
+    </div>
+    <div class="grid g4" style="margin-top:28px">
+      <div class="frame"><img src="/img/arena-balcony.webp" width="960" height="540" alt="An away gym with a balcony." loading="lazy" /></div>
+      <div class="frame"><img src="/img/arena-brick.webp" width="960" height="540" alt="An away gym with brick walls." loading="lazy" /></div>
+      <div class="frame"><img src="/img/arena-teal.webp" width="960" height="540" alt="An away gym in teal." loading="lazy" /></div>
+      <div class="frame"><img src="/img/arena-timber.webp" width="960" height="540" alt="An away gym with timber beams." loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+
+<section id="rivals">
+  <div class="wrap">
+    <p class="kicker">The other bench</p>
+    <h2 class="display"><span class="slant">Eleven aces. <em>One remembers you.</em></span></h2>
+    <p class="lede">Every team you play has an ace with his own game. Watch film or run into him once and you learn the counter. Micah Reyes is your season rival. He goes at your weak hand, and he remembers what you did last time.</p>
+    <div class="grid aces" style="margin-top:28px">
+      <figure class="card"><div class="frame"><img src="/img/ace-reyes.webp" alt="Micah Reyes" loading="lazy" /></div><figcaption><b>Micah Reyes</b><span>Two-way wing</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/ace-cole.webp" alt="Isaiah Cole" loading="lazy" /></div><figcaption><b>Isaiah Cole</b><span>Picks you up full court</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/ace-serrano.webp" alt="Nico Serrano" loading="lazy" /></div><figcaption><b>Nico Serrano</b><span>Shooter who never stops moving</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/ace-mercer.webp" alt="Jonah Mercer" loading="lazy" /></div><figcaption><b>Jonah Mercer</b><span>Seals you deep in the post</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/ace-brooks.webp" alt="Devin Brooks" loading="lazy" /></div><figcaption><b>Devin Brooks</b><span>Patient. Finds the open man.</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/ace-duarte.webp" alt="Owen Duarte" loading="lazy" /></div><figcaption><b>Owen Duarte</b><span>Lives on the offensive glass</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/ace-ellis.webp" alt="Andre Ellis" loading="lazy" /></div><figcaption><b>Andre Ellis</b><span>Gets out and runs</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/ace-park.webp" alt="Theo Park" loading="lazy" /></div><figcaption><b>Theo Park</b><span>Pull-up bucket-getter</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/ace-cross.webp" alt="Julian Cross" loading="lazy" /></div><figcaption><b>Julian Cross</b><span>Runs the tempo</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/ace-price.webp" alt="Cameron Price" loading="lazy" /></div><figcaption><b>Cameron Price</b><span>Stretch four</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/ace-navarro.webp" alt="Luis Navarro" loading="lazy" /></div><figcaption><b>Luis Navarro</b><span>Locks you up on the perimeter</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="people" class="alt">
+  <div class="wrap">
+    <p class="kicker">Your people</p>
+    <h2 class="display"><span class="slant">Nobody shows you <em>a meter.</em></span></h2>
+    <p class="lede">People tell you where you stand in words. They remember what you did, and they drift if you go weeks without showing up. Stay close and it pays off: Jonathan's workouts get better, and Gordon starts looking for you on the floor.</p>
+    <div class="grid cast" style="margin-top:32px">
+      <figure class="card"><div class="frame"><img src="/img/cast-nakamura.webp" alt="Coach Nakamura" loading="lazy" /></div><figcaption><b>Coach Nakamura</b><span>Freshman head coach. Formal, demanding, and he controls your minutes.</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/cast-gordon.webp" alt="Gordon" loading="lazy" /></div><figcaption><b>Gordon</b><span>Your rival on your own team. Gets his own shot, and he's a step ahead of you on day one.</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/cast-jonathan.webp" alt="Jonathan" loading="lazy" /></div><figcaption><b>Jonathan</b><span>Your guy. Nervous, talks a lot, keeps you grounded.</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/cast-christina.webp" alt="Christina" loading="lazy" /></div><figcaption><b>Christina</b><span>Serious soccer player, driven and warm. Your life outside the gym.</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/cast-ethan.webp" alt="Ethan" loading="lazy" /></div><figcaption><b>Ethan</b><span>Debate, student government, and also into Christina.</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/cast-mom.webp" alt="Mom" loading="lazy" /></div><figcaption><b>Mom</b><span>Strict about school. Quietly in your corner.</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/cast-dad.webp" alt="Dad" loading="lazy" /></div><figcaption><b>Dad</b><span>Strict about school. Doesn't love your odds.</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/cast-tre.webp" alt="Tre Lawson" loading="lazy" /></div><figcaption><b>Tre Lawson</b><span>Freshman wing. All offense, and loud about it.</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/cast-okafor.webp" alt="Sam Okafor" loading="lazy" /></div><figcaption><b>Sam Okafor</b><span>Freshman point guard. Disciplined, reads the coach.</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/cast-cardenas.webp" alt="Adrian Cardenas" loading="lazy" /></div><figcaption><b>Adrian Cardenas</b><span>Starting two guard. Cuts corners.</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/cast-hollis.webp" alt="Danny Hollis" loading="lazy" /></div><figcaption><b>Danny Hollis</b><span>Forward. Gordon's interpreter.</span></figcaption></figure>
+      <figure class="card"><div class="frame"><img src="/img/cast-ruiz.webp" alt="Hector Ruiz" loading="lazy" /></div><figcaption><b>Hector Ruiz</b><span>The custodian who leaves the gym lights on.</span></figcaption></figure>
+    </div>
+    <p class="dim" style="margin-top:28px">Get called up and you meet Coach Brennan, who runs JV and talks trash with his players, and Coach Dunbar, who runs varsity and wants to know what you saw before you passed.</p>
+    <div class="strip" aria-label="Christina through the year">
+      <div class="frame"><img src="/img/still-christina-school.webp" alt="Christina at school." loading="lazy" /></div>
+      <div class="frame"><img src="/img/still-christina-soccer.webp" alt="Christina in her soccer kit." loading="lazy" /></div>
+      <div class="frame"><img src="/img/still-christina-casual.webp" alt="Christina on the weekend." loading="lazy" /></div>
+      <div class="frame"><img src="/img/still-christina-jacket.webp" alt="Christina in a jacket." loading="lazy" /></div>
+      <div class="frame"><img src="/img/still-christina-crewneck.webp" alt="Christina in a crewneck." loading="lazy" /></div>
+      <div class="frame"><img src="/img/still-christina-night.webp" alt="Christina at night." loading="lazy" /></div>
+      <div class="frame"><img src="/img/still-christina-formal.webp" alt="Christina dressed up." loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+
+<section id="body">
+  <div class="wrap">
+    <p class="kicker">Under the hood</p>
+    <h2 class="display"><span class="slant">Work, luck <em>and a growth spurt.</em></span></h2>
+    <p class="lede">The game tracks eight skills: shooting, handle, passing, defense, basketball IQ, strength, speed and explosiveness. It also tracks confidence, discipline, grades, fatigue and your body.</p>
+    <div class="mech">
+      <div class="panel">
+        <span class="tag">Growth</span>
+        <h3>One growth roll a year</h3>
+        <p>You grow one to five inches this year, and more is likely if your parents' heights say you've got more coming. The spurt starts somewhere between week 4 and week 26 and takes three to seven weeks to show up.</p>
+      </div>
+      <div class="panel">
+        <span class="tag">Training</span>
+        <h3>Put in the work</h3>
+        <p>A normal week's gains swing up to 35% either way. Once in a while you hit a breakthrough week worth up to nine normal ones. Rarer still, a week gives you almost nothing. Game minutes and good coaching stack on top.</p>
+      </div>
+      <div class="panel">
+        <span class="tag">Fatigue</span>
+        <h3>Cooked legs cost you</h3>
+        <p>Run yourself into the ground and your gains shrink and your injury risk climbs. A rest block takes fatigue off. The plan shows the risk of each block before you lock it in.</p>
+      </div>
+      <div class="panel">
+        <span class="tag">Injuries</span>
+        <h3>Tweaks happen</h3>
+        <p>Practice, workouts and games carry a small chance of getting hurt, and nothing makes it zero. No injury lasts more than two weeks or costs more than four games.</p>
+      </div>
+      <div class="panel">
+        <span class="tag">Minutes</span>
+        <h3>Coach decides</h3>
+        <p>Being healthy and ready doesn't promise minutes. Nakamura never sees your real ratings, only what you show him, and he reviews roles in weeks 16, 22 and 27.</p>
+      </div>
+      <div class="panel">
+        <span class="tag">Seeds</span>
+        <h3>Same seed, same year</h3>
+        <p>Every year runs from a seed number. Same number, same profile, same choices, same year. Change one choice and run it back.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="episodes" class="alt">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="kicker">Eight episodes</p>
+        <h2 class="display"><span class="slant">Freshman year, <em>in eight parts.</em></span></h2>
+        <p class="lede">Each episode opens on its question and ends with what changed: your team's record, your minutes and points, where your time went. The next one unlocks an hour later.</p>
+        <p class="dim">Episode 1 runs about 20 to 40 minutes, depending on how fast you read.</p>
+      </div>
+      <div class="frame"><img src="/img/scene-nakamura-clipboard.webp" width="1100" height="733" alt="Coach Nakamura with his clipboard at practice." loading="lazy" /></div>
+    </div>
+    <ol class="episodes">
+      <li><span class="n">1</span><div><b>Your Name on the List</b><span>What kind of player will you become, and is there a place for you?</span></div></li>
+      <li><span class="n">2</span><div><b>Earn Your Minutes</b><span>Can you turn your preparation into something the coach can use?</span></div></li>
+      <li><span class="n">3</span><div><b>Someone Is Watching</b><span>What happens when another player tests who you are?</span></div></li>
+      <li><span class="n">4</span><div><b>What They Can Count On</b><span>Can people depend on you when your commitments compete?</span></div></li>
+      <li><span class="n">5</span><div><b>The Rematch</b><span>Have you changed enough to answer what exposed you?</span></div></li>
+      <li><span class="n">6</span><div><b>What We Leave on the Floor</b><span>What can this team do together?</span></div></li>
+      <li><span class="n">7</span><div><b>Your Time</b><span>Where will you put the time the season gave back?</span></div></li>
+      <li><span class="n">8</span><div><b>Next November</b><span>What changed, and what will you carry into next season?</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section id="year-end">
+  <div class="wrap split flip">
+    <div>
+      <p class="kicker">June</p>
+      <h2 class="display"><span class="slant">Then <em>run it back.</em></span></h2>
+      <p class="lede">The year ends with a title for the year you had, like The Late Bloomer or The Almost. You get your season averages, every game in the log, where you stand with your people, the turning points, and what's still open for next year.</p>
+      <p>Then run freshman year again: new body, new schedule, new luck.</p>
+    </div>
+    <div class="frame"><img src="/img/scene-gordon-outdoor-court.webp" width="1100" height="733" alt="You and Gordon at the park court at golden hour, Gordon holding the ball." loading="lazy" /></div>
+  </div>
+</section>
+
+<section id="gallery" class="alt">
+  <div class="wrap">
+    <p class="kicker">Gallery</p>
+    <h2 class="display"><span class="slant">Straight <em>from the game.</em></span></h2>
+    <div class="gallery">
+      <div class="frame big"><img src="/img/scene-guarding-gordon.webp" alt="You guarding Gordon in practice." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-bleachers-jonathan.webp" alt="Jonathan in the bleachers." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-jonathan-passing.webp" alt="Jonathan passing in a drill." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-christina-ethan-hallway.webp" alt="Christina and Ethan in the hallway." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-reyes-reads-you.webp" alt="Micah Reyes reading your move." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-you-rebound.webp" alt="You pulling down a rebound." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-navarro-cuts-off.webp" alt="Luis Navarro cutting off your drive." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-cross-calls-set.webp" alt="Julian Cross calling a set." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-jonathan-rebounding.webp" alt="Jonathan rebounding at practice." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-you-defense-ready.webp" alt="You in a defensive stance." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-reyes-warmup.webp" alt="Micah Reyes in warmups." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-cross-bounce-pass.webp" alt="Julian Cross throwing a bounce pass." loading="lazy" /></div>
+      <div class="frame"><img src="/img/scene-navarro-ready.webp" alt="Luis Navarro waiting on defense." loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap faq">
+    <p class="kicker">Questions</p>
+    <h2 class="display"><span class="slant">FAQ</span></h2>
+    <details>
+      <summary>Is it free?</summary>
+      <p>Freshman year is free, all eight episodes. After each episode the next one unlocks an hour later. On the web you can pay $1 to skip the wait.</p>
+    </details>
+    <details>
+      <summary>Is there more after freshman year?</summary>
+      <p>Sophomore year is in the works. Finish freshman year and you can pre-order it for $5. It'll be $8 when it drops.</p>
+    </details>
+    <details>
+      <summary>Where is my save?</summary>
+      <p>In your browser, on your device. There's no account, so clearing your browser's site data or playing in a private window loses it. Safari on iPhone and iPad deletes a site's data after 7 days without a visit.</p>
+    </details>
+    <details>
+      <summary>Is there an app?</summary>
+      <p>An iPhone app is on the way. For now, play in your browser on your phone or computer.</p>
+    </details>
+    <details>
+      <summary>Can I rename people?</summary>
+      <p>You name your own player. You can also rename Gordon, Jonathan and Christina.</p>
+    </details>
+    <details>
+      <summary>What do you collect?</summary>
+      <p>Anonymous play data: which choices and results happen, never your name. You can turn it off from the menu on the game's home screen. The <a href="/privacy.html">privacy policy</a> has the details.</p>
+    </details>
+    <details>
+      <summary>Who makes it?</summary>
+      <p>Charles Chen LLC. Write to <a href="mailto:hello@runitbackgame.com">hello@runitbackgame.com</a>.</p>
+    </details>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap split">
+    <div>
+      <p class="kicker">You got next</p>
+      <h2 class="display"><span class="slant">Fifty-one kids. <em>Thirty spots.</em></span></h2>
+      <p class="lede">Tryouts are in November. Freshman year is free and runs in your browser.</p>
+      <p style="margin-top:26px"><a class="btn" href="/play/" data-cta>Play freshman year free</a></p>
+    </div>
+    <div class="frame"><img src="/img/team.webp" width="1400" height="933" alt="Five freshmen in navy warmups on an outdoor court, looking up, one holding the ball." loading="lazy" /></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>Run It Back · Charles Chen LLC</span>
+    <span><a href="/privacy.html">Privacy</a> · <a href="mailto:hello@runitbackgame.com">hello@runitbackgame.com</a></span>
+  </div>
+</footer>
+
+<script>
+  // A returning player already has a year going. Local storage can throw (blocked site data), so
+  // the page works without it.
+  (function () {
+    try {
+      if (!localStorage.getItem("replay.save.v1")) return;
+      document.querySelectorAll("[data-cta]").forEach(function (a) {
+        a.textContent = a.classList.contains("small") ? "Continue" : "Continue your year";
+      });
+    } catch (e) { /* storage blocked */ }
+  })();
+</script>
+</body>
+</html>
