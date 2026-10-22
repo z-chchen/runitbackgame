@@ -1,0 +1,31 @@
+# Run It Back
+
+> Run It Back is a high school basketball life sim that runs free in a web browser. You go back to freshman year and see how far basketball could have taken you. Made by Charles Chen LLC.
+
+Freshman year runs 42 weeks, August to June, in eight episodes. It has 180 scenes, 16 games and then a bracket, and 11 rival aces. There's no download and no account; the save stays in the player's browser.
+
+## How it plays
+
+- Build your player: height and weight (real or dream numbers), your parents' heights, a frame, a position and one of 15 play styles.
+- Each week has four steps. Plan four blocks of free time (skill work, open gym, film, lifting, conditioning, study, family, friends, rest or free time). Live one or two scenes with your coach, teammates, friends and family. Play games possession by possession for 32 minutes. Then a recap shows what changed and why.
+- Twice a game, three times in tournament and rival games, the clock stops and the player makes the call: the sound play, a gamble, staying out of it, or taking over. About once every two games there is a split-second play like a loose ball or a charge.
+- Tryouts are in November: 51 kids, 30 spots. Make the freshman team and you still fight for minutes; Coach Nakamura reviews roles three times a season. Get cut and the year keeps going. JV and varsity call-ups are possible but rare.
+- The season is six non-league games, ten league games against five schools, then a single-elimination bracket of all six league teams.
+- The game tracks eight skills (shooting, handle, passing, defense, basketball IQ, strength, speed, explosiveness) plus confidence, discipline, grades, fatigue and your body. You grow one to five inches during the year; the growth spurt starts between week 4 and week 26. Relationships have no meters; people tell you where you stand in words.
+- Every year runs from a seed. Same seed and same choices give the same year. The year ends with a title for the season you had, your averages, game log and turning points. Then you can run freshman year again.
+
+## Price
+
+- Freshman year is free, all eight episodes. Each episode unlocks an hour after the last. On the web, $1 skips the wait.
+- Sophomore year is in the works. After finishing freshman year you can pre-order it for $5; it will be $8 at release.
+- An iPhone app is on the way. For now the game runs in a browser on phone or computer.
+
+## Links
+
+- [Landing page](https://runitbackgame.com/): what the game is, the cast, the eight episodes, FAQ
+- [Play the game](https://runitbackgame.com/play/): the game itself (needs JavaScript)
+- [Privacy policy](https://runitbackgame.com/privacy.html): what the game stores and sends, and how to turn analytics off
+
+## Contact
+
+- Charles Chen LLC, hello@runitbackgame.com
